@@ -41,7 +41,6 @@ smart-expense-tracker/
     npm start
     ```
 
-4. Open your browser and navigate to `http://localhost:3000`
 
 ## Features
 - Track daily expenses

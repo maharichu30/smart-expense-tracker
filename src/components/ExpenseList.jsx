@@ -19,27 +19,19 @@ function ExpenseList({
         return (
           <div
             key={exp.id}
-            className={`
-              bg-white rounded-2xl p-5 shadow-md
+            className={`bg-white rounded-2xl p-5 shadow-md
               flex justify-between items-center
               transition-all duration-300
               hover:shadow-xl hover:-translate-y-1
-              ${
-                isEditing
-                  ? "ring-2 ring-indigo-400"
-                  : "ring-1 ring-gray-100"
-              }
-            `}
-          >
-            {/* Left info */}
+              ${isEditing ? "ring-2 ring-indigo-400"
+                  : "ring-1 ring-gray-100"}`}>
+    
             <div>
               <p
                 className={`font-semibold text-lg ${
                   exp.type === "income"
                     ? "text-emerald-600"
-                    : "text-red-500"
-                }`}
-              >
+                    : "text-red-500"}`}>
                 {exp.category} • ₹{exp.amount}
               </p>
 
@@ -61,7 +53,7 @@ function ExpenseList({
               </span>
             </div>
 
-            {/* Actions */}
+            
             <div className="flex gap-3">
               <button
                 onClick={() => startEditExpense(exp)}
