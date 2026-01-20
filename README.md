@@ -27,7 +27,7 @@ smart-expense-tracker/
 ### Steps
 1. Clone the repository
     ```bash
-    git clone <repository-url>
+    git clone "https://github.com/maharichu30/smart-expense-tracker"
     cd smart-expense-tracker
     ```
 
@@ -41,6 +41,7 @@ smart-expense-tracker/
     npm start
     ```
 
+4. Open your browser and navigate to `http://localhost:3000`
 
 ## Features
 - Track daily expenses
